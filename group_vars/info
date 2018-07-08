@@ -2,7 +2,7 @@ env: info
 aws_region: "us-east-2"
 vpc_id: "vpc-01200069"
 subnet_id: "subnet-ea9663a6"
-app1_ami_id="ami-7d132e18"
-app1_instance_type="t2.micro"
-tf_states_bucket="assgnmt-terraform-states"
+app1_ami_id: "ami-7d132e18"
+app1_instance_type: "t2.micro"
+tf_states_bucket: "assgnmt-terraform-states"
 
