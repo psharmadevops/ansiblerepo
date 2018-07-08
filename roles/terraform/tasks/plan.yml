@@ -1,8 +1,11 @@
 ---
 
+- include: tfvariables.yml
+
 - name: plan
   terraform:
     project_path: "{{ terraform_project_path }}/{{ env }}"
     plan_file: "{{ terraform_project_path }}/{{ env }}/tfplan"
     lock: true
     state: planned
+

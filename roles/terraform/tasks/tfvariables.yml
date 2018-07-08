@@ -1,10 +1,10 @@
 - name: Copy env variables
   template:
                 src: env_variables
-                dest: {{ terraform_project_path }}/{{ env }}/variables.tf
+                dest: "{{ terraform_project_path }}/{{ env }}/variables.tf"
 
 - name: Copy remote variables
   template:
                 src: remote_variables
-                dest: {{ terraform_project_path }}/{{ env }}/remote.tf
+                dest: "{{ terraform_project_path }}/{{ env }}/remote.tf"
 
