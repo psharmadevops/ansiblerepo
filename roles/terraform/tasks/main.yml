@@ -1,0 +1,12 @@
+---
+
+- name: terraform dir and env exists
+  file: path="{{ item.path }}" state="{{ item.state }}"
+  with_items:
+      - { path: "{{ terraform_project_path }}" , state: "directory" }
+      - { path: "{{ terraform_project_path }}/{{ env }}" , state: "directory" }
+      - { path: "{{ terraform_project_path }}/{{ env }}/tfplan" , state: "touch" }
+
+
+- name: include plan/apply
+  include: "{{ action }}.yml"
