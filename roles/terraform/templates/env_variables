@@ -1,0 +1,6 @@
+variable "app1_instance_type" {default="{{ app1_instance_type }}"}
+variable "app1_ami_id" {default="{{ app1_ami_id }}"}
+
+variable "app1_subnet_id" {default="{{ subnet_id }}"}
+variable "app1_vpc_id" {default = "{{ vpc_id }}"}
+variable "aws_region" {default="{{ aws_region }}"}

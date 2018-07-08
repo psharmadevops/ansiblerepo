@@ -1,0 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket = "{{ tf_states_bucket }}"
+    region = "{{ aws_region }}"
+    encrypt="true"
+    key="terraform.tfstate"
+#    lock_table = "terraform-remote-states-locking"
+  }
+}
+ 
