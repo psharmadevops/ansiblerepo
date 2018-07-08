@@ -1,2 +1,2 @@
-terraform_project_path: "/var/lib/jenkins/terraform"
+terraform_project_path: "/var/lib/jenkins/tf"
 action: "plan"
